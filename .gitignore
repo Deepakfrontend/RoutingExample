@@ -1,0 +1,41 @@
+# Create a standard .gitignore file for a Vite + React project
+
+gitignore_content = """
+# dependencies
+/node_modules
+
+# production
+/dist
+
+# misc
+.DS_Store
+.env.local
+.env.*.local
+*.log
+
+# vscode
+.vscode/
+
+# system files
+Thumbs.db
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# local env files
+.env
+*.local
+
+# optional npm cache directory
+.npm
+
+# optional eslint cache
+.eslintcache
+"""
+
+# Save to file
+gitignore_path = "/mnt/data/.gitignore"
+with open(gitignore_path, "w", encoding="utf-8") as file:
+    file.write(gitignore_content)
+
+gitignore_path

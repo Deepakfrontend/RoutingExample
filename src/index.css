@@ -1,0 +1,165 @@
+/* ===== ULTRA-STYLISH OFFICE NAVBAR ===== */
+nav {
+  background: #0f172a; /* dark navy blue */
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+
+/* ===== LOGO / BRAND ===== */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 26px;
+  font-weight: 700;
+  background: linear-gradient(to right, #38bdf8, #6366f1); /* blue to purple */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+}
+
+.logo img {
+  height: 42px;
+  width: 42px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+.logo span{
+  color: white;
+}
+
+/* ===== NAV MENU ===== */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #f1f5f9;
+  padding: 10px 18px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Hover effect: glowing button + underline */
+nav ul li a {
+  position: relative;
+  text-decoration: none;
+  color: #f1f5f9;
+  padding: 10px 18px;
+  border-radius: 18px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+/* Hover effect — smooth underline + glow */
+nav ul li a:hover {
+  background-color: rgba(56, 189, 248, 0.1); /* subtle blue tint background */
+  color: #38bdf8; /* sky blue on hover */
+  box-shadow: 0 2px 8px rgba(56, 189, 248, 0.2); /* soft glow */
+  transform: translateY(-1px); /* slightly lift on hover */
+}
+
+/* Animated underline */
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(to right, #38bdf8, #6366f1);
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+  width: 60%;
+}
+
+/* Optional underline animation */
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 6px;
+  width: 0%;
+  height: 2px;
+  background-color: #38bdf8;
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+  width: 60%;
+}
+
+
+/* ===== CONTACT PAGE LAYOUT ===== */
+.container {
+  display: flex;
+  gap: 30px;
+  padding: 20px 40px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== SIDEBAR NAVIGATION ===== */
+.sidebar {
+  min-width: 200px;
+  background: #f3f4f6;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.sidebar li {
+  list-style: none;
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.sidebar li a {
+  text-decoration: none;
+  color: #1e293b;
+  padding: 8px 12px;
+  display: block;
+  border-radius: 6px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.sidebar li a:hover {
+  background: #e0f2fe;
+  color: #0369a1;
+  font-weight: 600;
+}
+
+/* ===== OUTLET CONTENT AREA ===== */
+.content {
+  flex: 1;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
